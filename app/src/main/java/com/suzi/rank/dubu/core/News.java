@@ -1,0 +1,41 @@
+package com.suzi.rank.dubu.core;
+
+import java.io.Serializable;
+
+public class News implements Serializable {
+
+    private static final long serialVersionUID = -6641292855569752036L;
+
+    private String title;
+    private String content;
+    private String objectId;
+    private String createdAt;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getObjectId() {
+        return objectId;
+    }
+
+    public void setObjectId(String objectId) {
+        this.objectId = objectId;
+    }
+
+    public String getCreatedAt() {
+        return createdAt.substring(0,10);
+    }
+}
